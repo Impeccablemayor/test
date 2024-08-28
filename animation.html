@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 30px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 0;
+            background-color: #000;
+            /* animation-name: slideDown; */
+            animation-duration: 1s;
+            animation-iteration-count: 4;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                margin-top: 0;
+            } to {
+                margin-top: 200px;
+            }
+        }
+
+        @-webkit-keyframes slideDown {
+            from {
+                margin-top: 0;
+            } to {
+                margin-top: 200px;
+            }
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: #000;
+            animation: move-around 4s ease-in-out  infinite;
+        }
+
+        @keyframes move-around {
+            0% {margin-left: 0;  margin-top: 0;} 
+            25% {margin-left: 200px;  margin-top: 0px;  background-color: red;}
+            50% {margin-top: 200px;  margin-left: 200px;  background-color: blue;}
+            75% {margin-left: 0;  margin-top: 200px;  background-color: green;}
+            100% {margin-top: 0;  margin-top: 0px;  background-color: black;  }
+        }
+
+        @-webkit-keyframes move-around {
+            0% {margin-left: 0;  margin-top: 0;} 
+            25% {margin-left: 200px;  margin-top: 0px;  background-color: red;}
+            50% {margin-top: 200px;  margin-left: 200px;  background-color: blue;}
+            75% {margin-left: 0;  margin-top: 200px;  background-color: green;}
+            100% {margin-top: 0;  margin-top: 0px;  background-color: black;  }
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box"></div>
+
+        <div class="box2"></div>
+    </div>
+
+    <!-- <marquee behavior="" direction="">dfshhjdsjdfs</marquee> -->
+</body>
+</html>

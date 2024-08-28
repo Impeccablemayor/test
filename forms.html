@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+    border: none;
+    border-bottom: 2px solid black;
+    outline: 0;
+
+    }
+
+    input::placeholder{
+        text-align: center;
+       
+    }
+    span{
+        font-size: 1.5em;
+        color: red;
+    }
+  button{
+   
+    background-color: transparent;
+    font-weight: bolder;
+   
+  }
+
+  button:hover{
+   padding: 5px;
+   background-color: blue;
+    color: white;
+  }
+</style>
+<body>
+    <form action="">
+    
+    <h1> HTML FORMS</h1>
+    <label for="fname">NAME<span>:</span></label>
+    <input type="text" placeholder="put your first name"> <br><br>
+    <label for="lname">lastname <span>:</span></label>
+    <input type="text" placeholder="put your lastname "><br><br>
+    <label for="age">age <span>:</span></label>
+    <input type="date"><br><br>
+    <label for="phone number">phone number <span>:</span></label>
+    <input type="number" placeholder="1234567890"><br><br>
+    <label for="email">email <span>:</span></label>
+    <input type="email" placeholder="example@gmil.com"><br><br>
+    <label for="password">password <span>:</span></label>
+    <input type="password" placeholder="input a six digit password" required maxlength="4"><br><br>
+   <input type="checkbox">  
+     <label for="">remember me</label><br>
+
+     <label for="gender">gender</label><br>
+     <input type="radio" name="gender">
+     <label for="gender">male</label>
+     <input type="radio"name="gender">
+     <label for="gender">female</label>
+     <input type="radio"name="gender">
+     <label for="gender">others</label><br>
+
+     <button id="button">submit</button><br>
+
+     <label for="">course</label>
+     <label for="">
+        <select name="" id="">
+            <option value="">select course</option>
+            <option value="">data science</option>
+            <option value="">cyber security</option>
+            <option value="">web dseign</option>
+            <option value="">web dev</option>
+            <option value="">ui ux</option>
+            <option value="">ict</option>
+            <option value="">digital marketing</option>
+            <option value="">data analysis</option>
+            <option value="">video editing</option>
+        </select>
+     </label>
+    </form>
+    
+   <textarea name="" id="" cols="30" rows="10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, asperiores sit, libero assumenda architecto, aperiam velit soluta rem quibusdam laboriosam cupiditate ad praesentium officiis tempora numquam nihil aspernatur voluptatibus  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error odio neque voluptate, non assumenda minus corporis alias earum, inventore corrupti maiores eveniet consectetur impedit quisquam, fuga tempora velit expedita laudantium facere quia ducimus modi deserunt doloremque delectus? Nam eius amet, exercitationem totam ad sint, ipsa voluptatum neque deleniti necessitatibus reprehenderit quae corrupti a enim! Saepe aperiam dignissimos debitis? Repellendus, nostrum!</textarea>
+
+    
+</body>
+</html>

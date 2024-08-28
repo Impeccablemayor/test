@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableProject</title>
+</head>
+<style>
+  .container{
+    border: 2px solid skyblue;
+    width:74%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    
+  }
+   
+    table{
+       
+        border-collapse: collapse;
+       text-align: center;
+       width: 1000px;
+       /* margin: auto;
+       margin-top: 100px;
+        */
+    }
+    img{
+        width: 100px;
+        border-radius: 50%;
+        height: 100px;
+        border: 5px solid white;
+        /*This is to make the image size standard,.*/
+        object-fit: cover;
+        
+    }
+
+     td,th{
+        border: 1px solid grey;
+       
+        
+    }
+    th, td:nth-child(1){
+        padding: 20px;
+    }
+
+    tr:nth-child(even){
+        background-color: rgb(218, 214, 214);
+    }
+
+    /* tr:nth-child(1){ */
+        /* background-color: skyblue; */
+    /* } */
+
+    th{
+        background-color: skyblue;
+    }
+
+    .Edit{
+        border: 2px solid skyblue;
+        width: 70px; 
+        height: 30px;
+    }
+
+    td button:nth-child(2){
+        border: 2px solid rgb(224, 191, 0);
+        width: 70px; 
+        height: 30px;
+    }
+</style>
+<body>
+            <div class="container">
+                        <table>
+                                    <tr>
+                                        <th>Sl</th>
+                                        <th>Image</th>
+                                        <th>Name</th>
+                                        <th>Phone</th>
+                                        <th>Address</th>
+                                        <th>Action</th>
+                                    </tr>
+
+
+                            
+                                    <tr>
+                                        <td>01</td>
+                                        <td><img src="./man 1.webp" alt=""></td>
+                                        <td>Muhibbullah Ansary</td>
+                                        <td>+880 017xx-xxxxxx</td>
+                                        <td>Mymensingh sadar</td>
+                                        <td>
+                                            <button class="Edit">Edit</button>
+                                            <button>Remove</button>
+                                        </td>
+                                    </tr>
+
+                            
+                                    <tr>
+                                        <td>02</td>
+                                        <td><img src="./man 1.webp" alt=""></td>
+                                        <td>Moshior Rahman Arif</td>
+                                        <td>+880 017xx-xxxxxx</td>
+                                        <td>Mymensingh sadar</td>
+                                        <td>
+                                            <button class="Edit">Edit</button>
+                                            <button>Remove</button>
+                                        </td>
+                                    </tr>
+
+                            
+                                    <tr>
+                                        <td>03</td>
+                                        <td><img src="./man 1.webp" alt=""></td>
+                                        <td>Suibe</td>
+                                        <td>+880 017xx-xxxxxx</td>
+                                        <td>Mymensingh sadar</td>
+                                        <td>
+                                            <button class="Edit">Edit</button>
+                                            <button>Remove</button>
+                                        </td>
+                                    </tr>
+                        </table>
+            </div>
+    
+</body>
+</html>

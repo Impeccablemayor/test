@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+   }
+body {
+    font-family: poppins;
+}
+   /* @media (min-width:412px) and (max-width:915px){
+   
+       } */
+  
+
+ .navbar{
+    background-color: brown;
+    opacity: 0.9;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    position: fixed;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.header  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(./close-up-basketball-shoes.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* filter: blur(2px); */
+}
+    
+.header h1{
+    color: white;
+    font-size: 1.3rem;
+    /* width: 140px; */
+    text-align: center;
+    }
+
+.nav-link .nav-links{
+    color: white;
+    padding: 14px;
+}
+
+.grid{
+    display: grid;
+    /* gap: 30px; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: none;
+    background: none;
+    /* border: 1px solid red; */
+    /* opacity: 0.6; */
+    /* background: rgb(1, 1, 49); */
+}
+
+.grid img{
+    width: 100%;
+    padding: 10px;
+}
+
+section {
+    background-color: none;
+    background: transparent;
+}
+
+.grid-head{
+    text-align: center;
+}
+
+.grid p {
+    /* border: 1px solid black; */
+    width: fit-content;
+    margin: auto;
+    color: brown;
+    font-weight: bolder;
+}
+
+.shoe {    
+display: grid;
+/* border: 1px solid red; */
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.shoe p{
+    text-align: center;
+    font-size: 0.9em;
+    color: #a52a2a;
+    border: 1px solid black;
+}
+
+.shoe p:hover{
+    color: white;
+    background-color: brown;
+    transform: scale(10px);
+    border: 1px solid brown;
+    }
+.shoe-collection h1{
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.contactus{
+    align-content: space-around;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+}
+
+.btn button{
+    /* margin-top: 20px; */
+    gap: 10px;
+    /* padding: 5px 20px; */
+    color: white;
+    text-decoration: none;
+    /* border: 2px solid brown; */
+}
+
+.btn button a:hover{
+    color: white;
+}
+
+.btn button:nth-child(1){
+    margin-right: 10px;
+}
+
+.btn button a{
+    text-decoration: none;
+    color: brown;
+}
+
+.btn button:hover{
+    background-color: brown;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+/* .contactus {
+    width: 30%;
+} */
+
+
+.contactus .last {
+    font-size: 1.2rem;
+    /* width: 300px; */
+}
+
+.wedo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lastly{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.lastly .contactus  {
+    width: 70%;
+}
+
+.st ul  a {
+text-decoration: none;
+color: white;
+font-size: 1.25rem;
+}
+
+.st ul li{
+border-bottom: 1px solid grey;
+}
+
+.list ul li i{
+color: brown;
+}
+
+.list ul{
+list-style-type:none;
+/* border: 2px solid blue; */
+}
+
+.newsletter p{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.newsletter{
+    text-align: center;
+}
+
+footer{
+    padding-top: 20px;
+    background-color: rgb(26, 25, 25);
+    color: white;
+    /* border: 2px solid green; */
+}
+
+footer .copyright{
+    text-align: center;
+    background-color: #8b3030;
+}
+
+/* footer .lastly .width{
+    min-width: 100%;
+} */
+
+#menu {
+    cursor: pointer;
+    color: #a52a2a;
+    display: none;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+
+@media (max-width: 996px) and (min-width: 0px) {
+    .lastly {
+        grid-template-columns: 100%;
+    }
+
+    .lastly .contactus  {
+        width: 100%;
+    }
+
+    .wedo  {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 0px) {
+    .nav-link {
+        display: none;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 65px;
+        height: 100vh;
+        background-color: #000;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav-link a {
+        display: block;
+        text-align: center;
+        margin: 60px 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #menu {
+        display: block;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .wedo {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .wedo > * {
+        width: 100%;
+    }
+}

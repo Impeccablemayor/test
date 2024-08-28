@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+
+    .hr-line{
+        border-bottom: 7px solid green;
+        animation: line 6s infinite reverse linear 2s ;
+    }
+     .ball{ 
+            /* border: 10px solid black; */
+            margin-top: 175px;
+            animation-name: example1;
+            position: relative;
+            top: -25vh;
+            animation-timing-function: ease-in-out;
+            animation-duration: 1s;
+        }
+
+div img{
+        width: 100px;
+        height: 100px;
+        /* border: 1px solid black; */
+        /* animation-name: example2;
+        animation-duration: 4s;
+        animation-iteration-count: infinite; */
+        animation: example2 6s  infinite reverse linear 2s;
+        }
+
+@keyframes example2 {   
+   0%, 100% {margin-left: 0; transform: rotate(0deg); }
+   20%, 80%{position: relative; top: 10vh;animation-timing-function: ease-in-out; animation-duration: 0.5s;}
+   50% {margin-left: 1265px;transform: rotate(360deg);}
+ } 
+
+@keyframes example1 {
+    20%{margin-top: -20px;}
+}
+
+/* @-webkit-keyframes line {
+    0%, 100%{
+        color: rgb(64, 22, 104);
+    }
+    50%{
+        color: rgb(199, 115, 115);
+    }
+} */
+
+@keyframes line {
+    0%, 20%{
+        border-bottom:4px solid rgb(161, 17, 17);
+    }
+    20%, 50%{
+        border-bottom:4px solid rgb(199, 115, 115);
+    }  
+    50%, 70%{
+        border-bottom:4px solid rgb(5, 235, 128);
+    }    
+}
+
+/* #horizontal-line{
+
+} */
+</style>
+<body>
+    <div class="ball" >
+        <img src="./ball_2-removebg-preview.png" alt="">
+    </div>
+    <div class="hr-line">
+    </div>
+</body>
+</html>

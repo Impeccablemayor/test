@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+ .bird{ 
+        border-bottom: 10px solid black;
+        margin-top: 175px;
+
+    }
+
+    div img{
+        width: 100px;
+        height: 100px;
+        /* animation-name: example2;
+        animation-duration: 4s;
+        animation-iteration-count: infinite; */
+        animation: example2 8s ease-in-out  infinite;
+
+                }
+
+
+@keyframes example2 {   
+from {margin-left: 0; transform: skew(0deg);}
+to {margin-left: 1265px;transform: skew(10deg); ;}
+} 
+
+</style>
+<body>
+    <div class="bird">
+<img src="./bird.png" alt="This is a bird">
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+    }
+    .dropdown a{
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 10px ;
+        margin-left: 10px;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        margin-left: 10px;
+        }
+
+    .dropdown:hover  .dropdown-content {
+        display: block;
+        box-shadow: 0px 2px 8px 0px  red;
+     }
+
+     .dropdown:hover .dropdown-content a{
+        display: block;
+     }
+
+     .dropdown-content a:hover{
+        padding: 5px;
+        background-color: gainsboro;
+     }
+        
+     
+</style>
+<body>
+    <div class="dropdown"> <a href="">About</a>
+        <div class="dropdown-content">
+            <p>Good boy!!!</p>
+            <a href="#">Joker</a>  
+            <a href="#">Soldier</a>
+            <a href="#">Brand</a>
+            <a href="#">Anchor</a>
+            <a href="#">Garden</a>
+            <a href="#">Satyr</a>
+            <a href="#"><img src="FASHION WOMAN.webp" alt="">Torch</a>
+        </div>
+    </div>
+</body>
+</html>

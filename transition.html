@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 30px;
+        }
+
+        button {
+            border: none;
+            font-size: 19px;
+            padding: 12px 25px;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #2727f7;
+        }
+
+        button:hover {
+            color: #2727f7;
+            /* transition-property: all;
+            transition-duration: .5s;
+            transition-timing-function: ease-in-out; */
+            transition: all .5s ease-in-out;  /* Shorthand */
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transition Example</h1>
+
+    <div>
+        <button>Hover over me</button>
+    </div>
+</body>
+</html>

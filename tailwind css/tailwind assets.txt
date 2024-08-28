@@ -1,0 +1,21 @@
+material-tailwind
+Flowbite.com
+tailwindcomponents.com
+
+How to install tailwind css in your project
+1. npm init -y
+2. Create a folder inside your project folder that you will store your html and css file.
+3. so go to tailwind installation documentation for the commands you will be running in your terminal.
+4. npm install -D tailwindcss
+5. npx tailwindcss init
+6. Add this one to your tailwind.config.js -- your content part especially 
+ "./src/**/*.{html,js}"
+7. Add this one to your input.css file
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+8. npx tailwindcss -i ./src/input.css -o ./src/output.css --watch    (The --watch there is added so that we dont have to rerun the command anytime we make changes to the file)
+9. link your css to your html
+<link href="./output.css" rel="stylesheet">
+npm run build

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown</title>
+    <style>
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            gap: 40px;
+        }
+        li a{
+            text-decoration: none;
+        }
+        ul{
+            position: relative;
+            display: inline-block;
+        }
+        ul li ul.DropDown{
+            display: none;
+            position: absolute;
+            line-height: 30px;
+            left: 0;
+        }
+
+        ul li:hover ul.DropDown{
+            display: block;
+        }
+        
+        ul li ul.DropDown2{
+            position: absolute;
+            display: none;
+            line-height: 30px;
+            padding: 0;
+        }
+
+        ul li:hover ul.DropDown2{
+            display: block;
+        }
+
+        ul li ul.DropDown3 {
+            position: absolute;
+            display: none;
+            line-height: 30px;
+            padding: 0;
+         }
+
+        ul li:hover ul.DropDown3{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">E-commerce</a>
+                <ul class="DropDown">
+                    <li><a href="#">Products</a></li>
+                        <li><a href="#">Cart</a></li>
+                </ul>
+                </li>
+                <li><a href="">Blog</a>
+                    <ul class="DropDown2">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">faqs</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Login</a>
+                    <ul class="DropDown3">                   
+                         <li><a href="#">username</a></li>
+                         <li><a href="#">Password</a></li>
+                    </ul>
+
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

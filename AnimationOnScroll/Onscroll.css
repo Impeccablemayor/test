@@ -1,0 +1,32 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.view .block{
+    background: red;
+    border: 2px solid green;
+    margin: 20px;
+    width: 100px;
+    height: 120px;
+    animation: appear linear ;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+}
+
+.view{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}

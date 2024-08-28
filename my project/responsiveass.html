@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="responsive_ass.css">
+    <title>MAYOR SHOE STORE</title>
+</head>
+<body>  
+    <header>
+        <div>
+            <div class="navbar">
+                <h1>MAYOR<span>SHOES</span></h1>
+                <div class="nav-link">
+                    <a class="nav-links" href="#">home</a>
+                    <a class="nav-links" href="#">about</a>
+                    <a class="nav-links" href="#">rating</a>
+                    <a class="nav-links" href="#">faqs</a>                          
+                </div>
+
+                <div id="menu">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </div>
+            </div>
+
+            <div class="header">
+                <h1>JOURNEY WITH OUR SPLENDID SHOES FOR VARIOUS OCCASIONS</h1>
+            </div>      
+        </div>           
+    </header>
+
+    <section>
+        <h1 class="grid-head">OUR SHOE COLLECTION</h1>
+            <div class="grid">                
+                <div>
+                    <img src="./shoe 8.jpeg" alt="">
+                    <p>Nike Air</p>
+                </div>
+                <div>
+                    <img src="./shoe 8.jpeg" alt="">
+                    <p>Chanel</p>
+                </div>
+                <div>
+                    <img src="./shoe 8.jpeg" alt="">
+                    <p>Nike Air</p>
+                </div>
+                <div>
+                    <img src="./shoe 8.jpeg" alt="">
+                    <p>Nike Air</p>
+                </div>
+                <div>
+                    <img src="./shoe 8.jpeg" alt="">
+                    <p>NIke Air</p>
+                </div>
+                <div>
+                    <img src="./shoe 8.jpeg" alt="">
+                    <p>Nike Air</p>
+                </div>
+                <div>
+                    <img src="./shoe 8.jpeg" alt="">
+                    <p>Nike Air</p>
+                </div>
+                <div>
+                    <img src="./shoe 8.jpeg" alt="">
+                    <p>Nike Air</p>
+                </div>
+        </div>
+    </section>
+    <section>
+        <div class="shoe-collection">
+            <h1>POPULAR CATEGORIES</h1>
+            <div class="shoe categories">
+                <p>SNEAKERS</p>
+                <p>CASUAL</p>
+                <p>OFFICE SHOES</p>
+                <p>MEN</p>
+                <p>WOMEN</p>
+                <p>BOOTS</p>
+            </div>
+        </div>   
+    </section>
+    <footer>
+        <div class="newsletter width">     
+            <h4>Newsletter</h4>
+            <p> Suscribe to our newsletter to get the latest update, when we update our shoe collections</p>
+            <div class="input">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email Address">
+                <button> Suscribe</button>
+            </div>
+        </div>
+       
+        <div class="lastly">
+            <div class="contactus width">
+                <h4>Shop affordable shoes online</h4>
+                <p class="last">Mayorshoes is an online shoe store that you can order your favourite sneakers, boots, corporate shoes, high tops, bouncy shoes and so on at affordable prices.</p>
+                <div class="btn">
+                    <button ><a href="http://Wa.me//+2347050835448"><i class="fa-solid fa-phone"></i> CALL US</a></button>
+                    <button><a href="binuyomayor16@gmail.com"></i><i class="fa-solid fa-envelope"></i> EMAIL US</a></button>
+                </div>
+            </div>
+            
+            <div class="wedo width">
+                            <div class="list">
+                                <ul>
+                                    <h4>My account  </h4>
+
+                                    <li>
+                                        <i class="fa-solid fa-angle-right"></i><a href="#"> My Dashboard</a>
+                                    </li>  
+
+                                    <li>
+                                        <i class="fa-solid fa-angle-right"></i><a href="#">  Contact Us </a>
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-angle-right"></i><a href="#"> My cart</a> 
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-angle-right"></i><a href="#"> My wishlist  </a>
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-angle-right"></i><a href="#"> Logout</a>
+                                        </li>
+                                </ul>
+                            </div>
+
+                            <div class="list">
+                                <ul>
+                                    <h4>Information</h4>
+
+                                    <li>
+                                        <i class="fa-solid fa-angle-right"></i><a href="#">	  Faq       </a>
+                                    </li>  
+
+                                    <li>
+                                        <i class="fa-solid fa-angle-right"></i><a href="#">  My orders  </a>
+                                    </li>
+
+                                    <li> 
+                                        <i class="fa-solid fa-angle-right"></i><a href="#"> Privacy Policy</a>
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-angle-right"></i><a href="#"> Return Policy</a> 
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-angle-right"></i><a href="#"> Terms and condition</a> 
+                                    </li>
+                                </ul>
+                            </div>
+            </div>
+        </div> 
+
+
+        <div class="copyright">
+            <p> Copyright &copy;  2022 MAYOR SHOE STORE</p> 
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById("menu"); 
+        var navBar = document.querySelector(".nav-link");
+        console.log(navBar);
+
+        menu.addEventListener("click", (e) => {
+            if (navBar.style.display == "block") {
+                navBar.style.display = "none";
+                e.currentTarget.innerHTML = '<i class="fa-solid fa-bars fa-lg"></i>';
+            } else {
+                navBar.style.display = "block";
+                e.currentTarget.innerHTML = '<i class="fa-solid fa-xmark fa-lg"></i>';
+            }
+        })
+    </script>
+</body>
+</html>

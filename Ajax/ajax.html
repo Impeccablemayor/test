@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        <h1>Text change over here</h1>
+        <button type="button" onclick="loadDoc()">Change content</button>
+    </div>
+</body>
+<script>
+   function loadDoc() {
+    var obj = new XMLHttpRequest();
+    obj.onreadystatechange = function(){
+        if (obj.readyState == 4 && obj.status ==200) {
+            document.getElementById("demo").innerHTML = obj.responseText;
+        }
+    }
+    obj.open("GET", "demo.txt", true);
+    obj.send();
+    
+   }
+
+
+</script>
+</html>

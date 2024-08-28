@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+
+    table{
+        border: 2px solid  black;
+        width: 100%;
+       height: 100vh;
+        text-align: center;
+        border-collapse: collapse;
+        /* overflow-x: auto; */
+    }
+
+    th,tr,td{
+        border: 2px solid  black;
+        /* vertical-align:; */
+        outline-color: invert;
+       
+    }
+    
+   
+
+    tr:nth-child(even){
+        background-color:pink;
+    }
+
+    tr:nth-child(odd){
+        background-color: blue;
+    }
+   
+
+</style>
+<body>
+    <table >
+        <h1>html tables</h1>
+
+        <tr>
+         <th>s/n</th>
+         <th>name</th>
+         <th>age</th>
+         <th>department</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>john doe</td>
+            <td>22</td>
+            <td>web design</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>jane doe</td>
+            <td>22</td>
+            <td> graphics desigh</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>mayowa</td>
+            <td>23</td>
+            <td> web design</td>
+        </tr>
+    
+    </table>
+</body>
+</html>

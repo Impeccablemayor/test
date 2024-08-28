@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 50px;
+        }
+
+        div:not(.element) {
+            margin-bottom: 20px;
+        }
+
+        div.element {
+            width: 200px;
+            height: 200px;
+            margin-top: 10px;
+            background-color: #000;
+        }
+
+        .scale:hover {
+            transform: scale(0.98);
+            /* Zoom out or zoom in  scale(2)*/
+            /* transform: scaleX(0.98) or scaleY(0.98);; */
+
+        }
+
+        .translate:hover {
+            transform: translate(-200px, -40px);
+            /* transform: translateX(-200px);
+            transform: translateY(40px); */
+        }
+
+        .rotate {
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 180px;
+            height: 180px;
+            transform: rotate(45deg);
+            border: 10px solid #1515e3;
+        }
+
+        .rotate > div {
+            width: 180px;
+            height: 180px;
+            color: #000;
+            display: flex;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+
+        #rotate {
+            position: relative;
+        }
+
+        #rotate p.percentage {
+            position: absolute;
+            top: 58%;
+            left: 7%;
+            z-index: 999;
+        }
+
+        .rotate:hover {
+            transform: rotate(320deg);
+            border-top: 10px solid #000;
+            transition:  transform 5s ease-in-out;
+            background-color:  #2525e2;
+        }
+
+        .skew:hover{
+            transform: skew(200deg);
+            /* transform: skewX(200deg);
+            transform: skewY(200deg); */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>TRANSFORM SCALE</h1>
+        <p>Scale zooms in or out of an element</p>
+
+        <div class="element scale"></div>
+    </div>
+
+    <div>
+        <h1>TRANSFORM TRANSLATE</h1>
+        <p>Translate changes the postion of an element</p>
+
+        <div class="element translate"></div>
+    </div>
+
+    <div id="rotate">
+        <h1>TRANSFORM ROTATE</h1>
+        <p>Rotate spins an element clockwise or anticlockwise</p>
+
+        <div class="element rotate"><div></div></div>
+        <p class="percentage">75%</p>
+    </div>
+
+    <div id="">
+        <h1>TRANSFORM SKEW</h1>
+        <p>Skew chnages our element to parallelogram style</p>
+
+        <div class="element skew"></div>
+    </div>
+</body>
+</html>
